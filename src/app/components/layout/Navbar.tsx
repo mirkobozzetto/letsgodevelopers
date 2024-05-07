@@ -7,7 +7,7 @@ import Logo from "../ui/Logo";
 
 const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-green-700 bg-neutral-900 p-2 text-sm px-6 text-green-500">
+    <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-teal-700 bg-neutral-900/75 p-2 text-sm px-6 text-teal-300">
       <Logo />
 
       <NavLink>Home</NavLink>
@@ -21,14 +21,19 @@ const SimpleFloatingNav = () => {
 
 const NavLink = ({ children }: { children: React.ReactNode }) => {
   return (
-    <a href="#" rel="nofollow" className="block overflow-hidden">
+    <a href="#" rel="nofollow" className="block overflow-hidden hover:text-teal-50">
       <motion.div
-        whileHover={{ y: -21 }}
-        transition={{ ease: "linear", duration: 0.2 }}
+        whileHover={{
+          scale: 1.05,
+          transition: { duration: .1 },
+        }}
+        whileTap={{ scale: 1 }}
+        // whileHover={{ y: -21 }}
+        // transition={{ ease: "linear", duration: 0.1 }}
         className="h-[20px]"
       >
-        <span className="flex h-[20px] items-center">{children}</span>
-        <span className="flex h-[20px] items-center text-green-50">
+        <span className="flex h-[20px] items-center p-1">{children}</span>
+        <span className="flex h-[20px] items-center p-1 text-teal-50">
           {children}
         </span>
       </motion.div>
@@ -41,19 +46,10 @@ const Nesletter = () => {
     <button
       className={`
           relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-[1px]
-          border-green-700 px-4 py-1.5 font-medium
-         text-green-300 transition-all duration-300
-
-          before:absolute before:inset-0
-          before:-z-10 before:translate-y-[250%]
-          before:scale-[2.5]
-          before:rounded-[100%] before:bg-green-50
-          before:transition-transform before:duration-300
-          before:content-[""]
-
-          hover:scale-105 hover:border-green-50 hover:text-green-900
-          hover:before:translate-y-[0%]
-          active:scale-100`}
+        border-teal-300 px-4 py-1.5 font-medium
+        text-teal-400 transition-all duration-300
+        hover:text-teal-50 hover:border-teal-100 hover:bg-teal-800
+          `}
     >
       Newsletter
     </button>

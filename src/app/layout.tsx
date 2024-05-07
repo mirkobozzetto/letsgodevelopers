@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, 'bg-green-400')}>
+      <body className={clsx(inter.className, 'bg-teal-950')}>
           <Navbar />
           {children}
       </body>
