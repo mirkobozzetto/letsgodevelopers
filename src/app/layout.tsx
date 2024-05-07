@@ -4,7 +4,7 @@ import clsx from 'clsx';
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { Theme } from "@radix-ui/themes";
+// import { Theme } from "@radix-ui/themes";
 
 import Navbar from "./components/layout/Navbar";
 
