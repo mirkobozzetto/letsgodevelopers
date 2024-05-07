@@ -46,7 +46,8 @@ const Nesletter = () => {
   return (
     <button
       className={`
-          relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-[1px]
+          relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap
+          rounded-lg border-[1px]
         border-teal-300 px-4 py-1.5 font-medium
         text-teal-400 transition-all duration-300
         hover:text-teal-50 hover:border-teal-100 hover:bg-teal-800
