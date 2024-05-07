@@ -24,7 +24,7 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
     <a href="#" rel="nofollow" className="block overflow-hidden">
       <motion.div
         whileHover={{ y: -20 }}
-        transition={{ ease: "backInOut", duration: 0.5 }}
+        transition={{ ease: "linear", duration: 0.2 }}
         className="h-[20px]"
       >
         <span className="flex h-[20px] items-center">{children}</span>
@@ -45,10 +45,10 @@ const Nesletter = () => {
          text-neutral-300 transition-all duration-300
 
           before:absolute before:inset-0
-          before:-z-10 before:translate-y-[200%]
+          before:-z-10 before:translate-y-[250%]
           before:scale-[2.5]
           before:rounded-[100%] before:bg-neutral-50
-          before:transition-transform before:duration-1000
+          before:transition-transform before:duration-300
           before:content-[""]
 
           hover:scale-105 hover:border-neutral-50 hover:text-neutral-900
