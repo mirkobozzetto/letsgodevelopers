@@ -23,7 +23,7 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
   return (
     <a href="#" rel="nofollow" className="block overflow-hidden">
       <motion.div
-        whileHover={{ y: -20 }}
+        whileHover={{ y: -21 }}
         transition={{ ease: "linear", duration: 0.2 }}
         className="h-[20px]"
       >
