@@ -7,7 +7,7 @@ import Logo from "../ui/Logo";
 
 const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-teal-700 bg-neutral-900/75 p-2 text-sm px-6 text-teal-300">
+    <nav className="top-4 left-[50%] fixed flex items-center gap-6 border-[1px] bg-neutral-900/75 px-6 p-2 border-teal-700 rounded-lg w-fit text-sm text-teal-300 -translate-x-[50%]">
       <Link href="/">
         <Logo />
       </Link>
@@ -23,7 +23,7 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
     <a
       href="#"
       rel="nofollow"
-      className="block overflow-hidden hover:text-teal-50"
+      className="block hover:text-teal-50 overflow-hidden"
     >
       <motion.div
         whileHover={{
@@ -33,8 +33,8 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
         whileTap={{ scale: 1 }}
         className="h-[20px]"
       >
-        <span className="flex h-[20px] items-center p-1">{children}</span>
-        <span className="flex h-[20px] items-center p-1 text-teal-50">
+        <span className="flex items-center p-1 h-[20px]">{children}</span>
+        <span className="flex items-center p-1 h-[20px] text-teal-50">
           {children}
         </span>
       </motion.div>
