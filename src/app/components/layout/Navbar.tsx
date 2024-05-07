@@ -8,9 +8,9 @@ import Logo from "../ui/Logo";
 const SimpleFloatingNav = () => {
   return (
     <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-teal-700 bg-neutral-900/75 p-2 text-sm px-6 text-teal-300">
-      <Logo />
-
-      <NavLink>Home</NavLink>
+      <Link href="/">
+          <Logo />
+      </Link>
       <NavLink>Blog</NavLink>
       <NavLink>Contact</NavLink>
 
@@ -24,12 +24,10 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
     <a href="#" rel="nofollow" className="block overflow-hidden hover:text-teal-50">
       <motion.div
         whileHover={{
-          scale: 1.05,
+          scale: 1.02,
           transition: { duration: .1 },
         }}
         whileTap={{ scale: 1 }}
-        // whileHover={{ y: -21 }}
-        // transition={{ ease: "linear", duration: 0.1 }}
         className="h-[20px]"
       >
         <span className="flex h-[20px] items-center p-1">{children}</span>
