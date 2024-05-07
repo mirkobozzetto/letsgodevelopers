@@ -9,11 +9,10 @@ const SimpleFloatingNav = () => {
   return (
     <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-teal-700 bg-neutral-900/75 p-2 text-sm px-6 text-teal-300">
       <Link href="/">
-          <Logo />
+        <Logo />
       </Link>
       <NavLink>Blog</NavLink>
       <NavLink>Contact</NavLink>
-
       <Nesletter />
     </nav>
   );
@@ -21,11 +20,15 @@ const SimpleFloatingNav = () => {
 
 const NavLink = ({ children }: { children: React.ReactNode }) => {
   return (
-    <a href="#" rel="nofollow" className="block overflow-hidden hover:text-teal-50">
+    <a
+      href="#"
+      rel="nofollow"
+      className="block overflow-hidden hover:text-teal-50"
+    >
       <motion.div
         whileHover={{
           scale: 1.02,
-          transition: { duration: .1 },
+          transition: { duration: 0.1 },
         }}
         whileTap={{ scale: 1 }}
         className="h-[20px]"
