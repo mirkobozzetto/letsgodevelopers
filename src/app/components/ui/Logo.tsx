@@ -2,9 +2,9 @@ const Logo = () => {
   return (
     <>
       <svg
-        className=" rotate-0 scale-100 origin-center transition-transform duration-300"
-        width="25"
-        height="25"
+        className=" rotate-0 scale-100 origin-center transition-transform duration-300 size-5 text-green-200"
+        // width="25"
+        // height="25"
         viewBox="0 0 200 200"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

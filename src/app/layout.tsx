@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import clsx from 'clsx';
+
 import { Inter } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
@@ -20,16 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Theme
-          accentColor="lime"
-          panelBackground="solid"
-          radius="none"
-          scaling="110%"
-        >
+      <body className={clsx(inter.className, 'bg-green-400')}>
           <Navbar />
           {children}
-        </Theme>
       </body>
     </html>
   );

@@ -7,7 +7,7 @@ import Logo from "../ui/Logo";
 
 const SimpleFloatingNav = () => {
   return (
-    <nav className="fixed left-[50%] top-8 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-neutral-700 bg-neutral-900 p-2 text-sm px-6 text-neutral-500">
+    <nav className="fixed left-[50%] top-4 flex w-fit -translate-x-[50%] items-center gap-6 rounded-lg border-[1px] border-green-700 bg-neutral-900 p-2 text-sm px-6 text-green-500">
       <Logo />
 
       <NavLink>Home</NavLink>
@@ -28,7 +28,7 @@ const NavLink = ({ children }: { children: React.ReactNode }) => {
         className="h-[20px]"
       >
         <span className="flex h-[20px] items-center">{children}</span>
-        <span className="flex h-[20px] items-center text-neutral-50">
+        <span className="flex h-[20px] items-center text-green-50">
           {children}
         </span>
       </motion.div>
@@ -41,17 +41,17 @@ const Nesletter = () => {
     <button
       className={`
           relative z-0 flex items-center gap-2 overflow-hidden whitespace-nowrap rounded-lg border-[1px]
-          border-neutral-700 px-4 py-1.5 font-medium
-         text-neutral-300 transition-all duration-300
+          border-green-700 px-4 py-1.5 font-medium
+         text-green-300 transition-all duration-300
 
           before:absolute before:inset-0
           before:-z-10 before:translate-y-[250%]
           before:scale-[2.5]
-          before:rounded-[100%] before:bg-neutral-50
+          before:rounded-[100%] before:bg-green-50
           before:transition-transform before:duration-300
           before:content-[""]
 
-          hover:scale-105 hover:border-neutral-50 hover:text-neutral-900
+          hover:scale-105 hover:border-green-50 hover:text-green-900
           hover:before:translate-y-[0%]
           active:scale-100`}
     >
