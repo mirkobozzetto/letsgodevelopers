@@ -9,7 +9,7 @@ async function getData(rootPageId: string) {
 export default function Home() {
   return (
     <>
-      <NotionPage />
+      <h1>Home</h1>
     </>
   );
 }
