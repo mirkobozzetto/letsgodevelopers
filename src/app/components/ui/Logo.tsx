@@ -1,28 +1,24 @@
 import { useState } from "react";
 
 const Logo = () => {
-  const [fillColor, setFillColor] = useState("#81E6D9");
-  const [scale, setScale] = useState(1);
+  const [fillColor, setFillColor] = useState("#ccfbf1");
+
   return (
     <>
       <svg
-        width="90"
+        width="95"
         height="auto"
         viewBox="0 0 316 124"
-        // fill="currentColor"
         fill={fillColor}
         xmlns="http://www.w3.org/2000/svg"
         onMouseEnter={() => {
           setFillColor("#F0FDF4");
-          setScale(1.02);
         }}
         onMouseLeave={() => {
-          setFillColor("#81E6D9");
-          setScale(1);
+          setFillColor("#ccfbf1");
         }}
         style={{
-          transition: "fill 0.1s ease, transform 0.1s ease",
-          transform: `scale(${scale})`,
+          transition: "fill 0.5s ease",
         }}
       >
         <g clip-path="url(#clip0_1_3)">
