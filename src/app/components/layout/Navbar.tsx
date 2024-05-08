@@ -60,7 +60,7 @@ const Nesletter = () => {
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className="h-36">
       <SimpleFloatingNav />
     </nav>
   );
