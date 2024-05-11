@@ -1,4 +1,4 @@
-import { notion } from "@/utils/notion";
+import { notion } from "@/api/notion";
 
 const rootPageId = "3f623add4aa04ab9961a64383638f5bb";
 
