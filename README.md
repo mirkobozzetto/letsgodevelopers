@@ -6,4 +6,5 @@ L'idée étant de me servir de Notion comme backend afin d'écrire des articles 
 Ce projet pourrait devenir quelque chose de plus collaboratif s'il y en a qui ont des idées telles que l'implémentation d'autres articles via un compte utilisateur et leur propre API implémentée dans cette architechture-ci !
 
 https://twitter.com/bozzetto_mirko
+
 https://www.linkedin.com/in/bozzettomirko/
