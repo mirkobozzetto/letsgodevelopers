@@ -8,3 +8,11 @@ Ce projet pourrait devenir quelque chose de plus collaboratif s'il y en a qui on
 https://twitter.com/bozzetto_mirko
 
 https://www.linkedin.com/in/bozzettomirko/
+
+Et voici l'adresse de la page Notion qui me sert à alimenternle Blog:
+
+j'ai créé une Database Fullpage qui me sert de DB dans laquelle j'écrite les articles et où j'y définis les tags et les slugs dont nécessaires à rediriger à chaque fois sur les pages en question !
+
+### All is under construction for the moment ...
+
+https://www.notion.so/bozzetto/API-Let-s-go-developers-56705bf1fd504e1292ba18e743f32758?pvs=4
