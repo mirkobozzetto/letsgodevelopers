@@ -1,7 +1,6 @@
 import { notion } from "@/lib/notion";
 import { ExtendedRecordMap } from "notion-types";
 
-// const rootPageID = "3f623add4aa04ab9961a64383638f5bb";
 const rootPageID = process.env.NOTION_BLOG_DB!;
 
 async function getData(rootPageID: string): Promise<ExtendedRecordMap> {
@@ -15,7 +14,6 @@ export default async function NotionRoot() {
   return (
     <>
       {/* <h1>come on !</h1> */}
-      {/*  */}
       {/*  */}
     </>
   );
