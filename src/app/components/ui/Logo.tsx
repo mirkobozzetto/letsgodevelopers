@@ -21,7 +21,7 @@ const Logo = () => {
           transition: "fill 0.5s ease",
         }}
       >
-        <g clip-path="url(#clip0_1_3)">
+        <g clipPath="url(#clip0_1_3)">
           <path
             d="M36.5 47.05V1.62L42.1 0.619995V41.94H62.63V46.04L36.5 47.04V47.05Z"
             fill={fillColor}
