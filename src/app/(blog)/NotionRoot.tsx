@@ -16,7 +16,7 @@ export default async function NotionRoot() {
     method: "POST",
     headers: {
       Authorization: `Bearer ${secret}`,
-      "Notion-Version": "2021-08-16",
+      "Notion-Version": "2022-06-28",
     },
   })
     .then((response) => response.json())
