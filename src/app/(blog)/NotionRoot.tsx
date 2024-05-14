@@ -1,6 +1,8 @@
 import { notion } from "@/lib/notion";
 import { ExtendedRecordMap } from "notion-types";
 
+import fetchNotionData from "@/lib/notionFetch";
+
 const rootPageID = process.env.NOTION_BLOG_DB!;
 const secret = process.env.NOTION_SECRET!;
 
@@ -12,18 +14,7 @@ export default async function NotionRoot() {
   const data: ExtendedRecordMap = await getData(rootPageID);
   // console.log("notion page data", data);
 
-  fetch(`https://api.notion.com/v1/databases/${rootPageID}/query`, {
-    method: "POST",
-    headers: {
-      Authorization: `Bearer ${secret}`,
-      "Notion-Version": "2022-06-28",
-    },
-  })
-    .then((response) => response.json())
-    .then((data) => console.log(data))
-    .catch((error) => {
-      console.error("Erreur:", error);
-    });
+  fetchNotionData(rootPageID, secret).then((data) => console.log(data));
 
   return (
     <>
